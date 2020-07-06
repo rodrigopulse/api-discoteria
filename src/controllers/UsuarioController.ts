@@ -9,7 +9,7 @@ class UsuarioController {
   public async create (req: Request, res: Response): Promise<Response> {
     try {
       const usuario = await Usuario.create(req.body)
-      return res.json({ _id: usuario._id, email: usuario.email, nome: usuario.nome })
+      return res.status(200).json({ _id: usuario._id, email: usuario.email, nome: usuario.nome })
     } catch (err) {
       return res.status(400).json({ mensagem: 'Usuário não criado', erro: err })
     }
