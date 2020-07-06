@@ -1,6 +1,6 @@
-# Template para APIs em nodejs
+# API para o app Discoteria
 
-Esse template foi criado para iniciar projetos feitos em nodejs para a criação de APIs
+Essa api foi criada para alimentar o app Discoteria
 
 ## Instalar
 
