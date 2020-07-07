@@ -6,7 +6,7 @@ import Usuario from '../schemas/Usuario'
 
 class UsuarioController {
   // Cria Usuário
-  public async create (req: Request, res: Response): Promise<Response> {
+  public async criar (req: Request, res: Response): Promise<Response> {
     try {
       const usuario = await Usuario.create(req.body)
       return res.status(200).json({ _id: usuario._id, email: usuario.email, nome: usuario.nome })

@@ -21,7 +21,7 @@ const AlbumSchema = new Schema({
   capa: String,
   ladoa: Array,
   ladob: Array,
-  artistas: [{ type: Schema.Types.ObjectId, ref: Artista }]
+  artistas: { type: Schema.Types.ObjectId, ref: Artista }
 }, {
   collection: 'albuns',
   versionKey: false,
